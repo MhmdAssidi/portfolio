@@ -1,0 +1,108 @@
+* {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+  }
+  body {
+    color: #797979;
+    background: #ffffff;
+}
+  .header{
+    background-color: #f33046;
+  }
+  .header ul li a{
+    color: #f9f9f9; 
+    font-size: 18px;
+    font-weight: 500;
+  }
+ 
+  h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #414141;
+}
+
+.hero{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 3;
+}
+.hero .hero-text{
+    width: 60%;
+}
+.hero .hero-text p{
+    font-size: 25px;
+    color: #f9f9f9; 
+
+}
+.hero .hero-text h1{
+    font-size: 65px;
+    color: #f9f9f9; 
+}
+.hero .heroimg{
+width: 50%;
+height: 100%;
+position: relative;
+
+}
+.hero .heroimg img{
+width: 80%;
+}
+
+.hero .typed-text{
+    color: #f9f9f9; 
+    animation: blink-caret 0.75s step-end infinite;
+}
+.hero .typing-output{
+    font-size: 30px;
+    color: #f9f9f9; 
+    display: inline; /* prevent the cursor from going to a new line */
+     
+}
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .hero .hero-text p{
+        font-size: 25px;
+    }
+    .hero .hero-text h1{
+        font-size: 35px;
+    }
+    .hero .hero-text{
+        width: 40%;
+    }
+    .hero .heroimg{
+    width: 80%;    
+    }
+    .hero .typing-output{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero .hero-text p{
+        font-size: 15px;
+    }
+    .hero .hero-text h1{
+        font-size: 25px;
+    }
+   
+    .hero .typing-output{
+        font-size: 15px;
+    }
+    .hero .heroimg{
+        width: 100%;    
+        }
+}
