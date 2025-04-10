@@ -15,8 +15,10 @@
   }
   .header{
     background-color: #11087f;
-    position: relative;
+    position: fixed;
     z-index: 999;
+    top: 0;
+    width: 100%;
 
 }
   .navbar ul li a{
@@ -47,11 +49,11 @@
 
 
 .hero{
-    margin: 20px;
     display: flex;
     justify-content: center;
     align-items:center;
-    
+    background-color: #11087f;
+    width: 100%;
 }
 .hero .hero-text{
     width: 60%;
@@ -250,5 +252,81 @@ color: #11087f;
 
 }
 .container div h6{
+    font-size: 20px;
+}
+
+
+.allcards{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  
+   }
+   .cardsection h1{
+    margin-left: 10px;
+   }
+.allcards .card{
+   width: 20%;
+    background-color:#ffffff;
+    text-align: center;
+    border-radius: 2%; 
+    padding: 12px;
+    box-shadow: 10px 100px 150px rgba(199, 193, 193, 0.5);
+    background-color: #ffffff;
+    border: none;
+}
+
+.allcards .card i{
+    height: 55px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.allcards .card h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.allcards .card p{
+    font-size: 16px;
+   color: #000000;
+   opacity: 0.6;
+}
+
+@media (max-width: 750px) {
+    .allcards {
+        flex-direction: column;
+    }
+    .allcards .card{
+    width: 90%;
+    }
+
+}
+
+.footer{
+    margin-top: 30px;
+    background-color: #11087f;
+}
+
+
+.footer .footer-container{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    padding: 20px;
+    font-size: 25px;
+}
+.footer .footer-container .footer-social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer .footer-container .footer-social a{
+    margin: 10px;
+    color: #ffffff;
     font-size: 20px;
 }
