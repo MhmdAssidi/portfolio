@@ -188,3 +188,50 @@ color: #ffffff;
       }
 
 }
+.education{
+    margin-top: 45px;
+}
+.education .educationCont h1{
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 30px;
+}
+.education .educationCont h2{
+
+font-size: 25px;
+color: #11087f; 
+font-weight: 700;
+}
+.education .educationCont .educationText div{
+    font-size: 22px;
+
+}
+.educationCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educationCont .educationText{
+width: 50%;
+}
+.educationCont .educationText p{
+    font-size: 13px;
+}
+.educationCont .educationImg{
+    width: 40%;
+}
+.educationCont .educationImg img{
+width: 90%;
+}
+
+@media (max-width: 750px) {
+    .education .educationCont h2{
+
+        font-size: 20px;
+       
+        }
+        .education .educationCont .educationText div{
+            font-size: 18px;
+        }
+}
